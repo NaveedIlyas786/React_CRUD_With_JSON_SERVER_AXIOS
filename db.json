@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "name": "Amna",
+      "email": "anma@gmail.com",
+      "address": "Karachi",
+      "gender": "Female",
+      "subject": "Urdu",
+      "id": 2
+    },
+    {
+      "name": "Zain",
+      "email": "zain@gmail.com",
+      "address": "Lahore",
+      "gender": "Male",
+      "subject": "Urdu",
+      "id": 3
+    },
+    {
+      "name": "Pinky",
+      "email": "pinky@gmail.com",
+      "address": "Karachi",
+      "gender": "Female",
+      "subject": "Urdu",
+      "id": 4
+    },
+    {
+      "name": "Uzma",
+      "email": "uzma@gmail.com",
+      "address": "Karachi",
+      "gender": "Female",
+      "subject": "Urdu",
+      "id": 6
+    },
+    {
+      "name": "Lahori",
+      "email": "lahori@gmail.com",
+      "address": "",
+      "gender": "Male",
+      "subject": "",
+      "id": 7
+    },
+    {
+      "name": "Akbar",
+      "email": "akbar@gmsil.com",
+      "address": "nb",
+      "gender": "Male",
+      "subject": "Urdu",
+      "id": 8
+    },
+    {
+      "name": "asfd",
+      "email": "sdf@gmial.com",
+      "gender": "Female",
+      "subject": "Math",
+      "id": 9
+    },
+    {
+      "name": "fgc",
+      "email": "hg@gmail.com",
+      "gender": "Other",
+      "id": 10
+    },
+    {
+      "name": "Mohsin",
+      "email": "mohsin@gmail.com",
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "name": "g",
+      "email": "hg@gmail.com",
+      "gender": "Female",
+      "id": 12
+    },
+    {
+      "name": "gfh",
+      "email": "hg@gmail.com",
+      "gender": "Male",
+      "id": 13
+    },
+    {
+      "name": "Akram",
+      "email": "akram@gmail.com",
+      "gender": "Male",
+      "id": 14
+    }
+  ]
+}

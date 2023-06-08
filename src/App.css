@@ -1,0 +1,22 @@
+.tbody{
+    background-color: antiquewhite !important;
+}
+.head{
+    position: sticky;
+    top: -6%;
+    margin-bottom: 2rem !important;
+}
+
+.actions-container {
+    white-space: nowrap;
+  }
+  
+  .Parent{
+overflow-y: hidden !important;  
+}
+/* .myparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+  } */
