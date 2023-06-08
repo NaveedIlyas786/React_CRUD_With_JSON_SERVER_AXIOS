@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "server.js",
+  "main": "main.jsx", 
+  "backend": "server.js", 
   "scripts": {
     "dev": "vite",
-    "start": "node server.js",
+    "start": "node main.jsx", 
+    "backend": "node server.js", 
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
