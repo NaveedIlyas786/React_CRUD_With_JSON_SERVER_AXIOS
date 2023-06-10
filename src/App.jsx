@@ -12,6 +12,7 @@ import "./App.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import OnloadMessage from "./components/OnloadMessage";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   });
 
   return (
+    <div className="App">
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -32,6 +34,7 @@ function App() {
         <Route path="/read/:id" element={<ReadStudent />} />
         <Route path="/edit/:id" element={<EditStudent />} />
       </Routes>
+      <OnloadMessage/>
       <Particles
       className="myparticles"
       id="tsparticles"
@@ -101,6 +104,7 @@ function App() {
       }}
     />
     </BrowserRouter>
+    </div>
   );
 }
 

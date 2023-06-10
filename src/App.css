@@ -14,3 +14,55 @@
   .Parent{
 overflow-y: hidden !important;  
 }
+
+/* ! For onpage load message */
+.centered-card {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d4d4bdc;
+    height: 100vh;
+    width: 100%;
+    z-index: 10000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .centered-card.active {
+    display: block;
+  }
+  
+  .centered-card.inactive {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(88, 14, 226);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    border-radius: 5px;
+  }
+  
+  .card-title {
+    font-size: 35px;
+  }
+  
+  .card-text {
+    color:red; /* Assuming $clr-red is a SCSS variable */
+    letter-spacing: 1.5px;
+    word-wrap: break-word;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  

@@ -30,8 +30,8 @@ export default function React_DataTable() {
       setTimeout(() => {
         navigate("/");
         getUsers();
-       
       }, 2400);
+      
     } catch (error) {
       console.log(error);
       toast.error("Error deleting user");
@@ -129,7 +129,7 @@ export default function React_DataTable() {
     <>
       <div className="datatable Parent text-center px-5 shadow table-responsive">
         <DataTable
-          title="JSON Server CRUD"
+          title="JSON Server CRUD "
           columns={Columns}
           data={filterusers}
           fixedHeader
