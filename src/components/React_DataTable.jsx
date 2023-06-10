@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -10,10 +10,13 @@ export default function React_DataTable() {
   const [search, setSearch] = useState("");
   const [filterusers, setFilterUsers] = useState([]);
 
+  const navigate = useNavigate();
+
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:3000/users/${id}`);
-      toast.error("User Deleted Successfully!", {
+
+      toast.error("Deleted Successfully!", {
         position: "top-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -25,10 +28,10 @@ export default function React_DataTable() {
       });
 
       setTimeout(() => {
-        // navigate("/");
-        // location.reload(); //! Without it we have to refresh the page to see new remaining data, so therefore we use it, it will automatically refresh the page and delete the entry
+        navigate("/");
         getUsers();
-      }, 2000);
+       
+      }, 2400);
     } catch (error) {
       console.log(error);
       toast.error("Error deleting user");
@@ -155,9 +158,7 @@ export default function React_DataTable() {
           }
         />
       </div>
+      <ToastContainer /> {/* Place ToastContainer component here */}
     </>
   );
 }
-
-
-
